@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+  --cor-verde-claro: #A2A391;
+  --cor-verde-escuro: #878972;
+  --cor-rosa-claro: #EFE2D9;
+  --cor-rosa-escuro: #FDF2ED;
+  --cor-branca: #FFFFFF;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.sobre-mim {
+  background-color: var(--cor-rosa-claro);
+}
+
+.conteudo {
+  background-color: var(--cor-verde-claro);
+}
+
+footer a:hover {
+  color: var(--cor-verde-claro);
+  transition: 0.3s;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.card-title {
+  color: var(--cor-verde-escuro);
+  font-weight: 700;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+}
+
+.logo-img {
+  max-height: 60px;
+  height: auto;
+  width: auto;
+}
+
+
+@media (max-width: 576px) {
+  .logo-img {
+    max-height: 70px;
+  }
+}
+
