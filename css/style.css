@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
-
 :root {
   --cor-verde-claro: #A2A391;
   --cor-verde-escuro: #878972;
@@ -10,9 +8,23 @@
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
   background-color: #f9f9f9;
   color: #333;
+}
+
+strong , .abordagem{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+h1,h2,h3,h4,h5,a, label,i {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 350;
+}
+
+p, li {
+  font-family:"Nunito", sans-serif;
+  font-weight: 330;
 }
 
 .navbar {
@@ -26,6 +38,7 @@ body {
 
 .sobre-mim {
   background-color: var(--cor-rosa-claro);
+  text-align: justify;
 }
 
 .conteudo {
