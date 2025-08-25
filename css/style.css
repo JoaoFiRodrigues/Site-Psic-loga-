@@ -22,9 +22,14 @@ h1,h2,h3,h4,h5,a, label,i {
   font-weight: 350;
 }
 
+h2 {
+  font-size: 2.2em;
+}
+
 p, li {
   font-family:"Nunito", sans-serif;
   font-weight: 330;
+  font-size: 17px;
 }
 
 .navbar {
@@ -33,7 +38,7 @@ p, li {
 }
 
 .section {
-  padding: 60px 20px;
+  padding: 30px 8px 60px 8px;
 }
 
 .sobre-mim {
@@ -72,10 +77,26 @@ footer a:hover {
   width: auto;
 }
 
+.agende {
+  text-align: justify;
+  margin: 0em 10px;
+}
+
 
 @media (max-width: 576px) {
   .logo-img {
     max-height: 70px;
   }
+
+  h2 {
+    text-align: center;
+    font-size: 1.9em;
+  }
+
+  .agende, .sobre-mim, .texto-psi {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+  }
+
 }
 
