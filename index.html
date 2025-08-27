@@ -14,7 +14,31 @@
   <link rel="shortcut icon" type="imagex/png" href="./Marca D`água/Preto/icons8-psicologia-16.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
+<script>
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const data = {
+      nome: form.nome.value,
+      email: form.email.value,
+      mensagem: form.mensagem.value
+    };
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    });
+    if (response.ok) {
+      alert("Mensagem enviada com sucesso!");
+      form.reset();
+    } else {
+      alert("Erro ao enviar. Tente novamente.");
+    }
+  });
+</script>
 <body>
   <nav class="navbar navbar-expand-lg">
   <div class="container d-flex justify-content-between align-items-center">
@@ -160,7 +184,7 @@
           <h3 class="mb-4 text-center" style="color:#5b4b8a;">
             <i class="bi bi-envelope-paper-heart me-2"></i> Envie uma mensagem
           </h3>
-          <form action="enviar.php" method="post">
+          <form action="https://formspree.io/f/meoloagw" method="POST" id="contact-form">
             <div class="mb-3">
               <label for="nome" class="form-label">Nome</label>
               <input type="text" class="form-control form-control-lg rounded-3" id="nome" placeholder="Seu nome" required>
